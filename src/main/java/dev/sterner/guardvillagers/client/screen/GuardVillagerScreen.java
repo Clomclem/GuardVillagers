@@ -137,7 +137,7 @@ public class GuardVillagerScreen extends HandledScreen<GuardVillagerScreenHandle
         }
 
         @Override
-        public void renderButton(DrawContext ctx, int mouseX, int mouseY, float partialTicks) {
+        public void renderWidget(DrawContext ctx, int mouseX, int mouseY, float partialTicks) {
             ButtonTextures icon = this.requirementsForTexture() ? this.texture : this.newTexture;
             Identifier resourcelocation = icon.get(this.active, this.isSelected());
             ctx.drawGuiTexture(resourcelocation, this.getX(), this.getY(), this.width, this.height);
